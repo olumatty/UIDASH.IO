@@ -8,9 +8,9 @@ const initialState = {
 
 export const SidebarContext = createContext({});
 export const SidebarProvider = ({children}) =>{
-    const [state, dispatch] = useReducer(reducer,initialState);
+    const [state, dispatch] = useReducer(reducer, initialState);
 
-    const togglesidebar = () =>{
+    const toggleSidebar = () =>{
         dispatch({
             type:"TOGGLE_SIDEBAR"
         })
@@ -19,13 +19,13 @@ export const SidebarProvider = ({children}) =>{
     return (
         <SidebarContext.Provider value = {{
             ...state,
-            togglesidebar
+            toggleSidebar
         }}>
             {children}
         </SidebarContext.Provider>
     )
 }
 
-SidebarProvider.PropTypes = {
+SidebarProvider.propTypes = {
     children:PropTypes.node
 }

@@ -72,3 +72,35 @@ button {
   display:flex;
   height:100vh;
 }
+.lg-value{
+  font-size: 24px;
+  font-weight:600;
+}
+.grid-common{
+  background-color:var(--clr-primary);
+  border-radius:12px;
+  box-shadow: rgba(0,0,0,0.05) 0 8px 24px;
+  padding: 24px;
+  color:var(--clr-white);
+}
+.grid-c-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom: 16px;
+}
+.grid-c-title-text{
+  font-weight:400;
+  color:var(--clr-silver);
+}
+.grid-c-title-icon img{
+  width:24px;
+}
+@media screen and (max-width:1400px){
+  .grid-common{
+    padding:16px;
+  }
+  body{
+    font-size: 14px !important;
+  }
+}
