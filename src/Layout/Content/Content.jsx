@@ -7,7 +7,7 @@ const Content = () => {
         <ContentTop/>
         <ContentMain/>
       </div>
-      );
+      )
 }
  
 export default Content;
